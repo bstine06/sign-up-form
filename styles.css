@@ -1,10 +1,7 @@
-h2, h3 {
-  color: #A3D1D8;
-}
-
 body {
   margin: 0;
-  background-color: black;
+  background-color: #222;
+  color: white;
 }
 
 .container {
@@ -12,25 +9,27 @@ body {
   width: 100vw;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
+  flex-flow: row wrap;
 }
 
 .sidebar-container {
   flex: 2;
+  min-width:300px;
   max-width:100%;
   max-height:100%;
   background-image: url("resources/moon.jpg");
   background-size:cover;
   background-position: center; 
+  flex-grow:2;
 }
 
 .sidebar-banner {
   height: 5em;
-  margin-top: 30vh;
-  padding: 20px;
+  margin-top: 20vh;
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.3);
+  background: rgb(0,0,0,0.3);
 }
 
 .sidebar-image {
@@ -43,9 +42,38 @@ body {
 }
 
 .content-container {
-  width: 65vw;
   float: right;
-  background-color: black;
-  padding: 5vw;
   flex: 3;
+}
+
+.content-container > div {
+  padding:5vw;
+}
+
+.form-container {
+  background-color: rgba(256,256,256,0.1);
+}
+
+.form-header {
+  position:relative;
+  top: -20px;
+}
+
+form {
+  width: 100%;
+  display:flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width:47%;
+  flex-grow:1;
+}
+
+input {
+  height: 20px;
 }
