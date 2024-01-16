@@ -1,0 +1,51 @@
+h2, h3 {
+  color: #A3D1D8;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+}
+
+.sidebar-container {
+  flex: 2;
+  max-width:100%;
+  max-height:100%;
+  background-image: url("resources/moon.jpg");
+  background-size:cover;
+  background-position: center; 
+}
+
+.sidebar-banner {
+  height: 5em;
+  margin-top: 30vh;
+  padding: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.sidebar-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sidebar-text {
+  color: white;
+}
+
+.content-container {
+  width: 65vw;
+  float: right;
+  background-color: black;
+  padding: 5vw;
+  flex: 3;
+}
