@@ -1,8 +1,8 @@
 body {
-  margin: 0;
-  background-color: #051f28;
+  margin: auto;
+  background-color: #010607;
   color: white;
-  max-width: 1920px;
+  max-width: 1440px;
   text-align: center;
 }
 
@@ -12,6 +12,7 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-flow: row wrap;
+  background-color: #051f28;
 }
 
 .sidebar-container {
