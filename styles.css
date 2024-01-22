@@ -1,6 +1,6 @@
 body {
   margin: auto;
-  background-color: #010607;
+  background-color: #051f28;
   color: white;
   max-width: 1440px;
   text-align: center;
@@ -48,10 +48,12 @@ body {
   float: right;
   flex: 3;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  min-width: 60%;
+  padding-bottom: 150px;
 }
 
 .content-container > div {
-  padding:4vw;
+  padding:2em;
 }
 
 .form-container {
@@ -79,13 +81,43 @@ form {
   flex-grow:1;
 }
 
+.input-container > label{
+  text-align: left;
+}
+
 @media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .input-container {
     width: 90%;
   }
+  .sidebar-container {
+    background-position: center -100px;
+  }
 }
 
 input {
   height: 20px;
+}
+
+input:focus {
+  box-shadow: inset 0 0 3px black;
+  border:#3c7fb1 2px solid;
+}
+
+.create-account-button {
+  background-color: #976B6C;
+  display: inline-block;
+    line-height: 2.2em;
+    padding: 0 0.62em;
+    border: 1px solid #fff;
+    border-radius: 0.25em;
+}
+
+.create-account-button:hover {
+  border-color: #3c7fb1;
+  background-image: linear-gradient( to bottom, #9b8181, #976B6C );
+}
+
+.create-account-button:focus {
+  padding: 0  0.56em 0 0.68em;
 }
